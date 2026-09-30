@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hritika ❤️ Rohan — 10 Months</title>
+<meta name="theme-color" content="#0d0710">
+<style>
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#0d0710;color:#fff;font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 10%,#5b183b55,transparent 35%),radial-gradient(circle at 80% 80%,#8b1e4d44,transparent 35%);pointer-events:none}
+section{min-height:100svh;display:grid;place-items:center;padding:60px 20px;position:relative}
+.hero{text-align:center;overflow:hidden}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:11px;opacity:.65}
+h1{font-family:Georgia,serif;font-size:clamp(48px,15vw,100px);line-height:.9;margin:18px 0 14px;font-weight:500}
+h1 span{color:#ff8bb9}
+.subtitle{font-size:17px;opacity:.82}
+button,.btn{border:1px solid #ffffff33;background:#ffffff12;color:#fff;border-radius:999px;padding:14px 24px;font-size:15px;margin-top:30px;text-decoration:none;backdrop-filter:blur(12px)}
+.scroll{position:absolute;bottom:25px;font-size:12px;opacity:.5}
+.story{max-width:850px;text-align:center}
+.story h2,.gallery h2,.final h2{font-family:Georgia,serif;font-size:clamp(34px,9vw,62px);font-weight:400;margin:10px 0 20px}
+.story p{font-size:18px;line-height:1.8;opacity:.82;max-width:650px;margin:auto}
+.date{margin-top:25px;color:#ff9fc3;letter-spacing:2px}
+.gallery{display:block;max-width:1000px;margin:auto}
+.gallery h2{text-align:center;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.photo{overflow:hidden;border-radius:18px;background:#20101d;aspect-ratio:4/5}
+.photo:nth-child(1){grid-column:span 2;aspect-ratio:16/10}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.photo:hover img{transform:scale(1.04)}
+.note{text-align:center;max-width:650px;margin:45px auto 0;opacity:.75;font-size:14px}
+.final{text-align:center}
+.final .heart{font-size:70px;animation:pulse 1.5s infinite}
+.final p{font-family:Georgia,serif;font-size:22px;line-height:1.6;max-width:650px;margin:auto}
+.small{opacity:.5;font-size:12px;margin-top:35px}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.fade{animation:fade 1.3s both} @keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+#music{position:fixed;right:16px;top:16px;z-index:5;border:1px solid #ffffff30;background:#17101b;color:#fff;padding:10px 14px;border-radius:99px;font-size:12px}
+@media(max-width:600px){.grid{gap:7px}section{padding:45px 16px}}
+</style>
+</head>
+<body>
+<audio id="audio" loop preload="none"><source src="hotel-california.mp3" type="audio/mpeg"></audio>
+<button id="music">♫ Music</button>
+
+<section class="hero">
+  <div class="fade">
+    <div class="kicker">01 · 10 · 2026</div>
+    <h1>Hritika <span>♥</span> Rohan</h1>
+    <div class="subtitle">10 months of us.</div>
+    <a class="btn" href="#story">Open our story ↓</a>
+  </div>
+  <div class="scroll">scroll slowly ↓</div>
+</section>
+
+<section id="story">
+  <div class="story">
+    <div class="kicker">our little story</div>
+    <h2>10 months.<br>So many memories.</h2>
+    <p>
+      From the first conversations to all the random moments, laughs,
+      pictures, calls, and memories in between — somehow 10 months
+      passed, and I still want more moments with you.
+    </p>
+    <div class="date">HAPPY 10 MONTHS, HRITIKA ❤️</div>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <div class="kicker" style="text-align:center">our memories</div>
+    <h2>A few moments I never want to forget.</h2>
+    <div class="grid"><div class="photo"><img src="media/20260419_192434.jpg" alt="Hritika and Rohan memory"></div>
+<div class="photo"><img src="media/20260814_211657.jpg" alt="Hritika and Rohan memory"></div>
+<div class="photo"><img src="media/IMG-20260814-WA0010.jpg" alt="Hritika and Rohan memory"></div>
+<div class="photo"><img src="media/IMG-20260924-WA0261.jpg" alt="Hritika and Rohan memory"></div>
+<div class="photo"><img src="media/Screenshot_20260510_222854_One UI Home.jpg" alt="Hritika and Rohan memory"></div></div>
+    <div class="note">These are only a few memories. The real collection is everything we've lived together.</div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="final">
+    <div class="heart">❤️</div>
+    <div class="kicker">for Hritika</div>
+    <h2>Happy 10 Months</h2>
+    <p>
+      Here's to everything we've already shared,<br>
+      and everything that's still waiting for us.
+      <br><br>
+      I love you.
+    </p>
+    <div class="small">— Rohan · 1 October 2026</div>
+  </div>
+</section>
+
+<script>
+const audio=document.getElementById('audio');
+const btn=document.getElementById('music');
+btn.onclick=async()=>{
+  if(audio.paused){
+    try{await audio.play();btn.textContent='♫ Playing'}
+    catch(e){alert('Add your own hotel-california.mp3 file to this folder first.')}
+  } else {audio.pause();btn.textContent='♫ Music'}
+};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('fade')}),{threshold:.15});
+document.querySelectorAll('.story,.gallery,.final').forEach(x=>io.observe(x));
+</script>
+</body>
+</html>
